@@ -1,0 +1,9 @@
+test_cp1_vector_sin_iteraciones (tests.test_bubble_sorter.BubbleSorterTest.test_cp1_vector_sin_iteraciones)
+CP1 - Camino 1-2-8-9: el bucle externo no se ejecuta. ... ok
+test_cp3_vector_ya_ordenado (tests.test_bubble_sorter.BubbleSorterTest.test_cp3_vector_ya_ordenado)
+CP3 - Camino 1-2-3-4-6-3-7-2-8-9: el if es falso. ... ok
+test_cp4_vector_desordenado (tests.test_bubble_sorter.BubbleSorterTest.test_cp4_vector_desordenado)
+CP4 - Camino 1-2-3-4-5-6-3-7-2-8-9: el if es verdadero. ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
