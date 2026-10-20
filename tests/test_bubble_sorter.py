@@ -25,8 +25,8 @@ class BubbleSorterTest(unittest.TestCase):
     def test_cp3_vector_ya_ordenado(self):
         """CP3 - Camino 1-2-3-4-6-3-7-2-8-9: el if es falso."""
         # Arrange
-        vet = [1, 2]
-        esperado = [1, 2]
+        vet = [1, 2, 3]
+        esperado = [1, 2, 3]
         # Act
         resultado = self.sorter.bubble_sort(vet)
         # Assert
@@ -36,8 +36,8 @@ class BubbleSorterTest(unittest.TestCase):
         """CP4 - Camino 1-2-3-4-5-6-3-7-2-8-9: el if es verdadero."""
         # Arrange
         
-        vet = [2, 1]
-        esperado = [1, 2]
+        vet = [2, 3, 1]
+        esperado = [1, 2, 3]
         # Act
         resultado = self.sorter.bubble_sort(vet)
         # Assert
