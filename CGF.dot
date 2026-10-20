@@ -1,0 +1,32 @@
+digraph BubbleSortCFG {
+    rankdir=TB;
+    node [shape=box, style=rounded, fontname="Arial", fontsize=11];
+
+    // Definición de nodos
+    1 [label="1. Inicio / Declaración de variables\n(i = tamanho(vet))"];
+    2 [label="2. Bucle Externo\n(i >= 2?)"];
+    3 [label="3. Bucle Interno\n(j <= i - 1?)"];
+    4 [label="4. Condicional\n(vet[j] > vet[j+1]?)"];
+    5 [label="5. Intercambio\n(aux = vet[j]; ...)"];
+    6 [label="6. Fin de bloque if"];
+    7 [label="7. Fin bucle interno\n(Incremento j)"];
+    8 [label="8. Fin bucle externo\n(Decremento i)"];
+    9 [label="9. Fin de la función"];
+
+    // Definición de aristas (flujo)
+    1 -> 2;
+    
+    2 -> 3 [label="Verdadero", color="green"];
+    2 -> 8 [label="Falso", color="red"];
+    
+    3 -> 4 [label="Verdadero", color="green"];
+    3 -> 7 [label="Falso", color="red"];
+    
+    4 -> 5 [label="Verdadero", color="green"];
+    4 -> 6 [label="Falso", color="red"];
+    
+    5 -> 6;
+    6 -> 3 [label="Siguiente iteración (j++)"];
+    7 -> 2 [label="Siguiente iteración (i--)"];
+    8 -> 9;
+}

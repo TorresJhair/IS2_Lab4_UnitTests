@@ -1,0 +1,12 @@
+bubbleSort(int vet[]){
+  integer i,j,aux;
+  for (i=tamanho(vet); i >= 2; i--){
+    for (j=1; j <= i-1;j++){
+      if (vet[j] > vet[j+1]){
+        aux = vet[j];
+        vet[j] = vet[j+1];   
+        vet[j+1] = aux;
+      }
+    }
+  }
+}
