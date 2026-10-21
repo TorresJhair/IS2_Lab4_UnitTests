@@ -9,19 +9,20 @@ Laboratorio 4 de Ingeniería de Software II: pruebas unitarias (xUnit/`unittest`
 │   └── bubble_sorter.py      # Implementación de Bubble Sort (SUT)
 ├── tests/
 │   └── test_bubble_sorter.py # Pruebas unitarias (CP1, CP3, CP4)
-├── CGF.dot                   # Definición Graphviz del CFG
-├── CFG.png                   # Grafo de flujo de control renderizado
-├── bubble.txt                # Pseudocódigo de referencia
-├── reporte_ejecucion.log     # Salida de la ejecución de los tests
-├── reporte_cobertura.log     # Reporte de cobertura (terminal)
-├── htmlcov/                  # Reporte de cobertura en HTML
-├── requirements.txt          # Dependencias (coverage)
+├── docs/
+│   ├── CFG.dot                   # Definición Graphviz del CFG
+│   ├── CFG.png                   # Grafo de flujo de control renderizado
+│   ├── bubble.txt                # Pseudocódigo de referencia
+│   ├── reporte_ejecucion.log     # Salida de la ejecución de los tests
+│   └── reporte_cobertura.log     # Reporte de cobertura (terminal)
+├── htmlcov/                      # Reporte de cobertura en HTML
+├── requirements.txt              # Dependencias (coverage)
 └── .gitignore
 ```
 
 ## Grafo de flujo de control (CFG)
 
-![Control Flow Graph](CFG.png)
+![Control Flow Graph](docs/CFG.png)
 
 ## Configuración del entorno
 
@@ -65,5 +66,5 @@ Cada prueba sigue el patrón **Arrange-Act-Assert** y utiliza `setUp`/`tearDown`
 
 ## Resultados
 
-- **3 pruebas ejecutadas, 3 correctas** (ver `reporte_ejecucion.log`)
-- **Cobertura: 100%** de sentencias y ramas en `src/bubble_sorter.py` (ver `reporte_cobertura.log` y `htmlcov/`)
+- **3 pruebas ejecutadas, 3 correctas** (ver `docs/reporte_ejecucion.log`)
+- **Cobertura: 100%** de sentencias y ramas en `src/bubble_sorter.py` (ver `docs/reporte_cobertura.log` y `htmlcov/`)
